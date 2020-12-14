@@ -13,4 +13,5 @@ el 14 de Dic. 2020
 2. Esconder objetos del DOM utilizando JQuery.
 3. Accesar a contenidos y etiquetas con JQuery.
 4. Mover elementos del DOM con JQuery.
-
+5. Llamada a archivo de texto por Ajax, utilizando JQuery.
+6. Llamada Ajax a API para obetner valores de UF, utilizando JQuery.
