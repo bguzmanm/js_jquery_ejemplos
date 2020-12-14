@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+Cree una página web que contenga cuatro botones y un cuadrado 
+con un color a definir por el programador. 
+Cada botón debe representar un movimiento en alguna de las cuatro 
+direcciones elementales: arriba, abajo, izquierda, derecha. 
+Por cada vez que se presione un botón, se debe mover el cuadrado 
+10 pixeles en la dirección representada por el botón.
+El punto de inicio del cuadro es la coordenada (0,0). 
+Agregue además un quinto botón que permita reiniciar las acciones, 
+y situar el cuadrado en la coordenada de origen.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Cuadro</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <style>
+        .cuadro {
+            background-color: lightsteelblue;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .botonera {
+            background-color: lightyellow;
+            position:absolute;
+            bottom: 0;
+            
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $("#aba").click(function(click){
+                let ttop = $(".cuadro").css("top");
+                let top =  parseInt(ttop.substring(0, ttop.search("px"))); //extrae el px de top y convierte en int.
+                top +=10;
+                $(".cuadro").css("top", top + "px");     
+            });
+
+            $("#der").click(function(click){
+                let tleft = $(".cuadro").css("left");
+                let left =  parseInt(tleft.substring(0, tleft.search("px"))); //extrae el px de top y convierte en int.
+                left +=10;
+                $(".cuadro").css("left", left + "px");     
+            });
+
+            $("#arr").click(function(click){
+                let ttop = $(".cuadro").css("top");
+                let top =  parseInt(ttop.substring(0, ttop.search("px"))); //extrae el px de top y convierte en int.
+                if (top > 0){
+                    top -=10;
+                }
+                
+                $(".cuadro").css("top", top + "px");     
+            });
+
+            $("#izq").click(function(click){
+                let tleft = $(".cuadro").css("left");
+                let left =  parseInt(tleft.substring(0, tleft.search("px"))); //extrae el px de top y convierte en int.
+                if (left > 0 ){
+                    left -=10;
+                }
+                
+                $(".cuadro").css("left", left + "px");     
+            });
+
+            $("#reset").click(function(click){
+                $(".cuadro").css("left", "0px");
+                $(".cuadro").css("top", "0px");
+            });
+            
+        });
+    </script>
+
+    <div class="cuadro"></div>
+
+
+    <div class="botonera">
+        <button id="izq"><-</button>
+        <button id="der">-></button>
+        <button id="arr">^</button>
+        <button id="aba">v</button>
+        <button id="reset">0</button>
+    </div>
+
+
+
+</body>
+</html>

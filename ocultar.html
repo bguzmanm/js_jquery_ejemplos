@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+    Desarrolle una página que tenga un encabezado a modo de título, dos párrafos y un botón de texto “Resetear”. Asigne texto cualquiera sobre cada párrafo, al menos cinco líneas.
+Genere una rutina en JQuery tal que, al hacer clic sobre alguno de los párrafos, lo oculte. Al presionar el botón “Resetear” debe desplegar los párrafos que estén ocultos en ese momento.
+Se pide en este problema aplicar un diseño a través de CSS que destaque los párrafos, el título y el color de fondo de la página.
+-->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 JQuery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <style>
+        .par1 {
+            background-color: lightseagreen;
+        }
+        .par2 {
+            background-color: lightslategrey;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("h1").click(function(click){
+                $(this).hide("2");
+            });
+            $("p").click(function(click){
+                $(this).hide("2");
+            });
+            $("#navegacion").click(function(click){
+                $(this).hide("2");
+            });
+            $(":button").click(function(click){
+                $("h1").show("2");
+                $("p").show("2");
+                $("#navegacion").show("2");                
+            });
+
+        });
+    </script>
+    <div class="container">
+        <h1 id="titulo">Este es un ejemplo de JQuery</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navegacion">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Awakelab</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/calculadora.html">Calculadora (JavaScript)</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Esconder Objetos (JQuery)</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contenidos.html">Acceso a Textos y Contenido (JQuery)</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/movimiento.html">Movimiento de Objetos (JQuery)</a>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+
+        <p id="parra1" class="par1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sapiente a reiciendis quae maiores blanditiis voluptatum commodi hic debitis aut quisquam quia cupiditate sint mollitia, provident est ratione temporibus eius.</p>
+        <p id="parra2" class="par2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta autem minus qui, voluptate eligendi. Nisi nesciunt eum voluptate modi, praesentium quaerat architecto, mollitia quos tempora provident accusantium. Nam, tempore!
+        Eaque sed similique expedita laudantium soluta dolorum quae facilis officia voluptate ipsum optio, earum nobis. Asperiores quia quaerat, cum officia odio itaque explicabo assumenda nostrum eligendi harum, aspernatur quasi accusamus.
+        Quas deserunt iusto excepturi eius, sequi possimus inventore dicta odit consequatur tenetur iure tempora eum officia saepe nesciunt repudiandae dignissimos animi, dolores nemo? Officia accusantium voluptatem quam laboriosam veritatis. Nemo.
+        Iure, quia quam. Iure ducimus asperiores facilis eos saepe pariatur quisquam harum, dolor delectus illum eligendi officia numquam consectetur corporis eaque amet. Totam sapiente aspernatur est voluptatem debitis reprehenderit a?
+        Officia, error repellat? Rem, quas. Placeat doloribus at vel quam? Iusto, adipisci perferendis saepe veritatis illum est quae libero dolore excepturi totam nostrum perspiciatis distinctio odit sit quidem ipsam numquam?</p>    
+        <button class="btn btn-primary">Resetear...</button>
+    </div>
+    
+
+</body>
+</html>
