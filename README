@@ -1,0 +1,11 @@
+# Awakelab Academy
+## Desarrollado: Brian Guzmán
+## Iniciado: 14 de Dic. 2020
+
+Ejemplos de uso de JavaScript y JQuery
+
+1.- Pequeña calculadora en JavaScript utilizando función eval();
+2.- Esconder objetos del DOM utilizando JQuery.
+3.- Accesar a contenidos y etiquetas con JQuery.
+4.- Mover elementos del DOM con JQuery.
+
