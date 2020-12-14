@@ -24,10 +24,50 @@
 
 </head>
 <body>
+    
     <div class="container">
+        <h1>Llamada con Ajax</h1>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navegacion">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Awakelab</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="/calculadora.html">Calculadora <div class="fw-lighter">(JavScript)</div></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/ocultar.html">Esconder Objetos <div class="fw-lighter">(JQuery)</div></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/contenidos.html">Acceso a Textos y Contenido <div class="fw-lighter">(JQuery)</div></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/movimiento.html">Movimiento de Objetos <div class="fw-lighter">(JQuery)</div></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Llamada Simple Ajax <div class="fw-lighter">(JQuery)</div></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/valorUFAlDia.html">Ajax a API with JSON <div class="fw-lighter">(JQuery)</div></a>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+
+
         <div id="textoDelServidor">
             <h1>Este texto será cambiado por uno del servidor</h1>
         </div>
+
+
         <div>
             <button id="btnCambiar" type="button" class="btn btn-primary">Cambiar Contenido</button>
         </div>
