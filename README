@@ -1,8 +1,13 @@
-# Awakelab Academy
-## Desarrollado: Brian Guzmán - Awaker
-## Iniciado: 14 de Dic. 2020
-
 Ejemplos de uso de JavaScript y JQuery
+
+Breve muestra de ejemplo de algunos usos de JavaScript y JQuery para los 
+participantes del bootcamp.
+
+Awakelab Academy
+Elaborado por Brian Guzmán - Awaker
+el 14 de Dic. 2020
+
+Las funciones o ejercicios son los siguientes:
 
 1.- Pequeña calculadora en JavaScript utilizando función eval();
 2.- Esconder objetos del DOM utilizando JQuery.
